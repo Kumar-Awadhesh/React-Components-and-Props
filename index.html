@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Template</title>
+
+    <!-- link the css file to style the content. -->
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="root">
+       
+    </div>
+  </body>
+  <script src="https://www.unpkg.com/react@18.2.0/umd/react.development.js"></script>
+  <script src="https://www.unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+
+    //function to return/mount data to ReactDOM.
+    function Fun(){
+
+      return(
+        <>
+            {/*{title for the topic}*/}
+            <h1 className="header">Getting Started in <b>3 easy steps</b></h1>
+
+            {/*{create a main div to show all content and add a class name}*/}
+            <main className="container">
+
+                {/*{create seprate div for each topic}*/}
+                <div className="temp">
+                    <p className ="num">01</p>
+                    <h3 className="tilte">Find your template</h3>
+                    <p className="para">Every templates is embedded within an iframe, so you can easily check
+                        what they look like and test the responsive behaviour.</p>
+                </div>
+
+                {/*{create seprate div for each topic}*/}
+                <div className="temp">
+                    <p className="num">02</p>
+                    <h3 className="title">Copy the code</h3>
+                    <p className="para">Click the code tab to see the actual source code of the template.
+                        Copy and paste it into your project and adjust it ti your needs</p>
+                </div>
+
+                {/*{create seprate div for each topic}*/}
+                <div className="temp">
+                    <p className="num">03</p>
+                    <h3 className="tilte">Enjoy your free time</h3>
+                    <p className="para">You've just saved yourself a bunch of time not building the same stuff over and over again.
+                        Enjoy your free time, and build business features</p>
+                </div>
+            </main>
+        </>
+      )
+    };
+    {/*{mount the data to ReactDOM}*/}
+    let result = ReactDOM.createRoot(document.getElementById("root"));
+
+    {/*{render the function}*/}
+    result.render(<Fun/>)
+  </script>
+</html>

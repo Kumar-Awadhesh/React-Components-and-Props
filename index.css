@@ -1,0 +1,46 @@
+#root{
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(248, 249, 249);
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .header{
+    margin-left: 30%;
+    padding-top: 10%;
+    padding-bottom: 30px;
+  }
+
+  b{
+    color: rgb(73, 226, 73);
+    background: rgb(240, 242, 243);
+    background: linear-gradient(180deg,rgba(251,251,251,1) 50%, rgb(128, 244, 149) 100%)
+  }
+
+  .container{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .temp{
+    width: 280px;
+    text-align: center;
+    align-content: center;
+    font-size: large;
+  }
+
+  .num{
+    width: 30px;
+    height: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 5px;
+    background-color: rgb(73, 226, 73);
+    margin: auto;
+  }
+
+  .para{
+    color: rgb(143, 146, 145);
+    padding-bottom: 30%;
+  }
